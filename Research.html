@@ -11,8 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet" href="/leaflet/leaflet.css" />
-        <script src="/leaflet/leaflet.js"></script>
+		<link rel="stylesheet" href="/dist/leaflet.css" />
+        <script src="/dist/leaflet.js"></script>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -69,7 +69,7 @@
 							<h1>Posters</h1>
 							<h2 class="major">Posters</h2>
                             <li> Presented at the International Coral Reef Symposium (ICRS) - July 2026
-                                <div id="ICRS2026" style="width: 1200; height: 400px;" ></div>
+                                <div id="ICRS2026" style="width: 1000; height: 1200px;" ></div>
                             </li>
                                 <script>
                                     function createPosterMap(posterID, imageUrl){
@@ -93,14 +93,14 @@
                                     //zoom 2 1152 * 864
                                     //zoom 1 576 * 432
                                
-                                    var image= L.imageOverlay(imageUrl, [[0,0],[360,480]]); //initial size at zoom 1 )
+                                    var image= L.imageOverlay(imageUrl, [[0,0],[1189,800]]); //initial size at zoom 1 )
                                     image.addTo(map);
                                     // tell leaflet that the map is exactly as big as the image
-                                    map.setMaxBounds(new L.LatLngBounds([0,0], [360,480]));  // prevent panning outside the image area.
+                                    map.setMaxBounds(new L.LatLngBounds([0,0], [1189,841]));  // prevent panning outside the image area.
                                     //Note the viscosity setting keeps the image from being dragged outside this
                                 }              
                                
-                                createPosterMap('ICRS2026', '/images/posters/CAT ICRS Poster v2.0-prining.png');
+                                createPosterMap('ICRS2026', '/images/posters/CAT-ICRS-Poster-v2.0-printing.png');
         
                                
                                 </script>     
