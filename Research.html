@@ -75,7 +75,7 @@
                             <p> Presented at the International Coral Reef Symposium (ICRS) - July 2026</p>
 								<p>Cat Hauser, Lisa Carne, Art Gleason, Les Kaufman, Eva Romero, Ethan Deyle. The Pixels of Protection: Revealing Hidden Geometry of Corals Using Deep Learning and Photogrammetry to Support Reef Restoration. [Poster Presentation]. 
 									16th International Coral Reef Symposium (ICRS 2026), Auckland, New Zealand.
-                                <div id="ICRS2026" style="width: 841; height: 1189px;" ></div>
+                                <div id="ICRS2026" style="height: 600px; width: 400; " ></div>
 							</p>
                                 <script>
                                     function createPosterMap(posterID, imageUrl){
@@ -98,10 +98,10 @@
                                     //zoom 2 1152 * 864
                                     //zoom 1 576 * 432
                                
-                                    var image= L.imageOverlay(imageUrl, [[0,0],[1189,841]]); //initial size at zoom 1 )
+                                    var image= L.imageOverlay(imageUrl, [[0,0],[595,420]]); //initial size at zoom 1 )
                                     image.addTo(map);
                                     // tell leaflet that the map is exactly as big as the image
-                                    map.setMaxBounds(new L.LatLngBounds([0,0], [1189,841]));  // prevent panning outside the image area.
+                                    map.setMaxBounds(new L.LatLngBounds([0,0], [595,420]));  // prevent panning outside the image area.
                                     //Note the viscosity setting keeps the image from being dragged outside this
                                 }              
                                
@@ -111,7 +111,7 @@
 							<h3>AGU 2025</h3>
 							<p> Magaly Koch, Luke Joseph Gezovich, Matthew Weathers, Hannah Henry, Julia Grossman, Thomas Thelen, Tyler Lynn, Stephanie McNamara, Shalom Entner, Catherine Hauser, Eduardo Gonzalez-Lugo, Sucharita Gopal, Christine Regalla, Anindya Wirasatriya, Muhammad Helmi, Aris Ismanto, Muhammad Fakhri Khairillah Almunawir, Muhammad Shulhan, Muhamad Nur Al Fajrin, Sunelsya Surya, Hermin Indah Wahyuni, Agung Harijoko and Gayatri Marliyani; OS51E-0456 Global Coastal Hazard Perspectives: Insights from the 2025 Advanced Studies Institute Graduate Training Program on Multidisciplinary Coastal Zone Hazards in Java, Indonesia 
 								<a href = https://agu.confex.com/agu/agu25/meetingapp.cgi/Paper/1925675>link to AGU portal</a> 
-                                <div id="AGU2025" style="width: 1200px; height: 800px;" ></div>
+                                <div id="AGU2025" style="height: 450px; width: 650px;" ></div>
                             </p>
                                 <script>
                                     function createPosterMap(posterID, imageUrl){
@@ -135,10 +135,10 @@
                                     //zoom 2 1152 * 864
                                     //zoom 1 576 * 432
                                
-                                    var image= L.imageOverlay(imageUrl, [[0,0],[800,1200]]); //initial size at zoom 1 )
+                                    var image= L.imageOverlay(imageUrl, [[0,0],[400,600]]); //initial size at zoom 1 )
                                     image.addTo(map);
                                     // tell leaflet that the map is exactly as big as the image
-                                    map.setMaxBounds(new L.LatLngBounds([0,0], [800,1200]));  // prevent panning outside the image area.
+                                    map.setMaxBounds(new L.LatLngBounds([0,0], [400,600]));  // prevent panning outside the image area.
                                     //Note the viscosity setting keeps the image from being dragged outside this
                                 }              
                                
